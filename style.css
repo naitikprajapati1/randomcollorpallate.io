@@ -1,0 +1,104 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(216, 233, 248);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+/* .pallte{
+    display: grid;
+    column-gap: 130px;
+    row-gap: 21px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    padding: 100px 230px;
+} */
+.pallte {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.refresh-btn {
+  position: fixed;
+  /* left: 50%; */
+  bottom: 40px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  background: #4d82ff;
+  padding: 13px 20px;
+  border: 2px solid #fff;
+  /* transform: translateX(-50%); */
+  margin: auto ;
+  box-shadow: 0 15px 30px rgba(52, 87, 220, 0.2);
+  transition: all 0.3s ease;
+
+}
+.refresh-btn:hover {
+  background: #4d82ff;
+}
+.refresh-btn:active {
+  /* transform: translateX(-50%); */
+transform: scale(0.95);
+}
+.color-card {
+  margin: 12px;
+  padding: 7px;
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(52, 87, 220, 0.08);
+  transition: all 0.3s ease;
+}
+.color {
+  background-color: greenyellow;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+}
+#color-name {
+  display: block;
+  color: #444;
+  /* user-select: none; */
+  font-weight: 500;
+  font-size: 1.15rem;
+  margin: 12px 0 8px;
+  text-transform: uppercase;
+}
+
+.container .color-card {
+  margin: 12px;
+  padding: 7px;
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(52, 87, 220, 0.08);
+  transition: all 0.3s ease;
+}
+.color-card:active {
+  transform: scale(0.95);
+}
+.color-card .color {
+  width: 185px;
+  height: 188px;
+  border-radius: 4px;
+}
+.color-card:hover .color {
+  filter: brightness(107%);
+}
